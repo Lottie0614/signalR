@@ -1,0 +1,250 @@
+﻿html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+.btn.btn-default,
+.btn.btn-dark {
+    font-size: 16px;
+    color: #fff;
+    padding: 6px 15px;
+}
+
+.btn.btn-default {
+    background: #1a4870;
+}
+
+.btn.btn-dark {
+    background: #3a3a3a;
+}
+
+.btn.btn-default:hover, .btn.btn-dark:hover {
+    opacity: 0.7;
+}
+
+.wrapper {
+    position: relative;
+    height: calc(100vh - 20px);
+    padding: 10px;
+}
+
+.wrapper {
+}
+
+.fillform-area {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #617e9d;
+    padding: 20px;
+    left: 0;
+    display: flex;
+}
+
+.fillform-area input[type=text] {
+    flex: 0 0 auto;
+    width: calc(100% - 123px);
+    font-size: 18px;
+}
+
+.fillform-area input[type=button] {
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #3a3a3a;
+    color: #fff;
+    border: none;
+    flex: 0 0 auto;
+}
+
+.fillform-area input[type=text]:focus {
+    outline: none;
+    border-color: #1a4870;
+}
+
+.content {
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.container {
+    background-color: #99CCFF;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4276aa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5b5b5b;
+}
+
+.pop-dialog {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.pop-dialog .pop-cont {
+    width: 500px;
+    max-width: 95%;
+    /*box-shadow: 0 0 10px rgb(53,69,86);*/
+    display: block;
+    background: #fff;
+    /*padding: 30px 20px;*/
+    font-size: 18px;
+}
+
+.pop-dialog .pop-cont .pop-form {
+    padding: 30px 20px;
+}
+
+.pop-dialog .pop-cont .h1 {
+    padding: 19px 30px;
+    font-size: 20px;
+    background: #5c5c5c;
+    text-align: center;
+    border-bottom: solid 5px #c5c5c5;
+    color: #fff;
+}
+
+.pop-dialog .pop-cont .form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pop-dialog .pop-cont .form-flex label {
+    width: 100px;
+    flex: 0 0 auto;
+}
+
+.pop-dialog .pop-cont .form-flex .tfill {
+    flex: 1 0 0%;
+}
+
+.pop-dialog .pop-cont .form-group .form-control {
+    width: 100%;
+    font-size: 18px;
+    padding: 6px 5px;
+    box-shadow: none;
+    border: solid 1px #ccc;
+    height: 40px;
+    transition: all .3s ease;
+}
+
+.pop-dialog .pop-cont .form-group .form-control:focus {
+    border-color: #1a4870;
+    outline: none;
+}
+
+.pop-dialog .pop-cont .form-group + .form-group {
+    margin-top: 15px;
+}
+
+
+
+
+
+.pop-dialog .pop-cont .btn-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pop-dialog .pop-cont .btn-group > .btn {
+    margin: 0 5px;
+}
+
+/****/
+#discussion .peoplebox .icon-box .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#discussion .peoplebox .icon-box .icon.icon_people{
+    background-image: url('../images/icon_people.jpg');
+}
+#discussion .peoplebox .icon-box .icon.icon_dog{
+    background-image: url('../images/icon_dog.jpg');
+}
+#discussion .peoplebox .icon-box .icon.icon_pig{
+    background-image: url('../images/icon_pig.jpg');
+}
+#discussion .peoplebox .icon-box .icon.icon_rabbit{
+    background-image: url('../images/icon_rabit.jpg');
+}
+#discussion .peoplebox .icon-box .icon.icon_cat{
+    background-image: url('../images/icon_cat.jpg');
+}
+#discussion .peoplebox {
+    display: flex;
+}
+#discussion .peoplebox .name-box {
+    font-size: 15px;
+    padding-left: 7px;
+    padding-top: 3px;
+}
+
+.peoplebox .icon-box {
+    display: inherit;
+}
+
+#discussion .cont-box {
+    background: #ffffff;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 7px;
+    margin-top: 3px;
+    position: relative;
+    margin-left: 32px;
+}
+
+#discussion {
+    list-style: none;
+}
+
+#discussion li +li {
+    margin-top: 30px;
+}
+
+#discussion .cont-box:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 10px 0px;
+    border-color: transparent transparent #ffffff transparent;
+    content: "";
+    display: block;
+    left: 11px;
+    top: -10px;
+}

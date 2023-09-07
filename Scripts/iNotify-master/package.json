@@ -1,0 +1,68 @@
+{
+  "name": "@wcjiang/notify",
+  "version": "2.1.0",
+  "description": "JS achieve the browser title flashing , scrolling, voice prompts , chrome notice.",
+  "main": "index.js",
+  "module": "dist/notify.esm.js",
+  "unpkg": "dist/notify.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaywcjlove/iNotify.git"
+  },
+  "keywords": [
+    "inotify",
+    "notify",
+    "alert",
+    "notice",
+    "notification"
+  ],
+  "author": "kenny wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaywcjlove/iNotify/issues"
+  },
+  "homepage": "http://jaywcjlove.github.io/iNotify",
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "watch": "rollup -c rollup.config.mjs -w",
+    "start": "kkt start --app-src ./website",
+    "doc": "kkt build --app-src ./website"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@kkt/less-modules": "~7.3.2",
+    "@kkt/raw-modules": "~7.3.2",
+    "@kkt/scope-plugin-options": "~7.3.2",
+    "@rollup/plugin-commonjs": "~24.0.0",
+    "@rollup/plugin-json": "~6.0.0",
+    "@rollup/plugin-node-resolve": "~15.0.1",
+    "@rollup/plugin-terser": "^0.2.1",
+    "@uiw/react-github-corners": "~1.5.15",
+    "@uiw/react-markdown-preview": "~4.1.6",
+    "@wcj/dark-mode": "~1.0.15",
+    "bannerjs": "^2.1.0",
+    "classnames": "~2.3.2",
+    "kkt": "~7.3.2",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "rollup": "~3.9.0",
+    "rollup-plugin-sizes": "~1.0.5"
+  }
+}
